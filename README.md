@@ -56,8 +56,8 @@ vagrant up
 4. Once the game download is complete, navigate to `C:\Users\Public\Downloads\GenPatcher\` and launch the application **GenPatcher**.
 
 ## Useful Commands
-`vagrant status`: pretty self explanatory 
-`vagrant up --debug`: shows you ALL the runtime information 
+`vagrant status`: pretty self explanatory
+`vagrant up --debug`: shows you ALL the runtime information
 `vagrant halt`: just pauses the instance, instead of rebuilding it everytime
-`vagrant ssh`: gives you a shell in the VM\
+`vagrant ssh`: gives you a shell in the VM
 `mstsc.exe /v:127.0.0.1:55985`: use RDP instead of the vmware console
