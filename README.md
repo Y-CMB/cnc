@@ -10,14 +10,15 @@ You also need [vagrant](https://developer.hashicorp.com/vagrant/downloads) and t
 ```powershell
 git clone https://github.com/Y-CMB/cnc.git
 cd .\cnc\
+vagrant up
 ```
 
 2. Grab a coffee, this may take some time
 
 3. If using EA/Origin, you must fix the launcher to get rid of the popup.
-- locate `C:\ProgramData\Origin\local.xml`
-- add `<Setting key="MigrationDisabled" type="1" value="true" />` inbetween the <root> tags
-- save and close the document
+    - locate `C:\ProgramData\Origin\local.xml`
+    - add `<Setting key="MigrationDisabled" type="1" value="true" />` inbetween the <root> tags
+    - save and close the document
 
 4. Sign into Steam/Origin and download Generals
 
