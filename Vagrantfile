@@ -17,8 +17,6 @@ Vagrant.configure("2") do |config|
     #ENDTEST
   
     config.vm.provision "shell", path: "scripts/download_install.ps1"
-    # fix below
-    config.vm.provision "shell", path: "scripts/fix_origin.ps1"
 
     # config.vm.provision "local-exec" do |exec|
     #     exec.command = "mstsc.exe /v:127.0.0.1:53389"
