@@ -1,5 +1,7 @@
+**MacOS is still under development**
+
 # Intro
-This repo is a hodgepodge collection of code in an attempt to, as easy as possible, get a VM running with the ultimate goal of playing one of my favorite childhood games; Command and Conquer Generals. What you see here is an attempt to make thigs as seemless as possible for the end-user, regardless of launcher or platform (see pre-req section). 
+This repo is a hodgepodge collection of code in an attempt to, as easy as possible, get a VM running with the ultimate goal of playing one of my favorite childhood games; Command and Conquer Generals. What you see here is an attempt to make things as seemless as possible for the end-user, regardless of launcher or platform (see pre-req section). 
 
 ## Pre-req's
 1. VMWare Workstation or Fusion **(You need a broadcom account. Open the link, sign in, then open the link again.)**
@@ -18,9 +20,11 @@ This repo is a hodgepodge collection of code in an attempt to, as easy as possib
   ```
 
 3. You also need vagrant
+#### Windows
   - [Vagrant for Windows](https://releases.hashicorp.com/vagrant/2.4.1/vagrant_2.4.1_windows_amd64.msi)
   - [Vagrant VMWare Utility for Windows](https://releases.hashicorp.com/vagrant-vmware-utility/1.0.23/vagrant-vmware-utility_1.0.23_windows_amd64.msi)
 
+#### Mac
   - [Vagrant for Mac M-Series](https://releases.hashicorp.com/vagrant/2.4.1/vagrant_2.4.1_darwin_arm64.dmg)
   - [Vagrant VMWare Utility for Mac M-Series](https://releases.hashicorp.com/vagrant-vmware-utility/1.0.23/vagrant-vmware-utility_1.0.23_darwin_arm64.dmg)
 
@@ -52,3 +56,8 @@ vagrant up
 4. Once the game download is complete, navigate to `C:\Users\Public\Downloads\GenPatcher\` and launch the application **GenPatcher**.
 
 ## Useful Commands
+`vagrant status`: pretty self explanatory 
+`vagrant up --debug`: shows you ALL the runtime information 
+`vagrant halt`: just pauses the instance, instead of rebuilding it everytime
+`vagrant ssh`: gives you a shell in the VM\
+`mstsc.exe /v:127.0.0.1:55985`: use RDP instead of the vmware console
