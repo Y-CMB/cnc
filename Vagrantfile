@@ -7,6 +7,9 @@ Vagrant.configure("2") do |config|
       v.vmx["numvcpus"] = 4
       v.vmx["memsize"] = 8192
       v.vmx["cpuid.coresPerSocket"] = 2
+      v.vmx["svga.vramSize"] = 268435456
+      v.vmx["mks.enable3d"] = "TRUE"
+      v.vmx["svga.autodetect"] = "TRUE" 
       v.gui = true
     end
 
