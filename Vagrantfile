@@ -9,7 +9,9 @@ Vagrant.configure("2") do |config|
       v.vmx["cpuid.coresPerSocket"] = 2
       v.vmx["svga.vramSize"] = 268435456
       v.vmx["mks.enable3d"] = "TRUE"
-      v.vmx["svga.autodetect"] = "TRUE" 
+      v.vmx["svga.autodetect"] = "TRUE"
+      v.vmx["sound.present"] = "TRUE"       # Enable sound
+      v.vmx["sound.autodetect"] = "TRUE"
       v.gui = true
     end
 
