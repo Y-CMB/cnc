@@ -53,7 +53,7 @@ vagrant up
 3. Open Steam/Origin, sign in, and download Generals.
 **Note: Origin is installed, if the icon is not on the desktop, launch it by clicking the Windows button and typing "Origin"**
 
-4. Once the game download is complete, navigate to `C:\Users\Public\Downloads\GenPatcher\` and launch the application **GenPatcher**.
+4. Once the game download is complete, navigate to `C:\Users\vagrant\Downloads\GenPatcher\` and launch the application **GenPatcher**.
 
 5. Accept the EULA, click 'Apply Fixes' and 'Install GenTool'. If for whatever reason online isn't working, navigate to the 'Playing Online' tab and enable **Network optimizations...**. The 'Additional Content' and 'Maps' tabs provide some community mods.
 
