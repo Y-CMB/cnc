@@ -3,6 +3,8 @@
 Vagrant.configure("2") do |config|
     config.vm.box = "gusztavvargadr/windows-10"
     config.vm.box_version = "2202.0.2409"
+
+    # vmware
     config.vm.provider "vmware_workstation" do |v|
       v.vmx["numvcpus"] = 4
       v.vmx["memsize"] = 8192
@@ -15,6 +17,19 @@ Vagrant.configure("2") do |config|
       v.gui = true
     end
 
+    # virtualbox
+    config.vm.provider "virtualbox" do |vb|
+      vb.cpus = 4
+      vb.memory = 8192
+      vb.customize ["modifyvm", :id, "--cpus", 4]
+      vb.customize ["modifyvm", :id, "--cpus", 4, "--paravirtprovider", "default"]
+      vb.customize ["modifyvm", :id, "--vram", 256]
+      vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
+      vb.customize ["modifyvm", :id, "--audio-driver", "dsound"] # windows driver
+      vb.customize ["modifyvm", :id, "--audiocontroller", "hda"]
+      vb.gui = true
+    end
+    
     #TEST
     config.vm.communicator = "winrm"
     config.winrm.transport = :negotiate # default, but makes me feel better
